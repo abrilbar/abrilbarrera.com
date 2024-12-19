@@ -1,0 +1,289 @@
+tetrys.css/* General */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    text-align: center; /* Centra el texto en todo el body */
+}
+
+h1 {
+    margin-left: 120px;  /* Ajusta el margen desde la izquierda */
+    margin-top: 30px;
+    text-align:left;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333; /* Color inicial de las letras */
+    transition: color 0.3s ease;
+    text-align: center; /* Centra el texto de h2 */
+}
+
+h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1rem;
+    color: #100a63; /* Color inicial de las letras */
+    transition: color 0.3s ease;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Evitar estilo de enlace por defecto (botón gris y subrayado) */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    outline: none; /* Elimina el borde que aparece al hacer clic */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.5s ease;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 40px; /* Ajusta el margen superior del header */
+    position: sticky; /* Hace que el navbar se quede fijo al hacer scroll */
+    top: 0; /* Se asegura de que se quede en la parte superior */
+    z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
+    width: 100%; /* Hace que el navbar ocupe el ancho completo */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro al hacer scroll */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+    color: #cc4043;
+}
+
+.nav-link {
+    color: #cc4043; /* Color rojo para los textos de los enlaces */
+    font-size: 18px; /* Tamaño de fuente del navbar */
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #a52a2a; /* Rojo más oscuro al pasar el cursor */
+}
+
+/* Hero Section */
+.hero {
+    background: url('Recursos/fotosobremi.jpg') center center / cover no-repeat;
+    height: 100vh; /* Ajusta la altura de la sección */
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-links {
+    margin-top: 2rem;
+}
+
+.hero-link {
+    display: inline-block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 3rem; /* 5 veces más grande aproximadamente */
+    color: #cc4043; /* Color rojo para los enlaces del hero */
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+.hero-link:hover {
+    color: #a52a2a; /* Rojo más oscuro al pasar el cursor */
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Proyecto */
+.project {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px; /* Máximo ancho para cada proyecto */
+    text-align: center;
+}
+
+.project:hover h2 {
+    color: #cc4043; /* Rojo elegante para el texto al hacer hover */
+}
+
+.project .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+/* Efectos adicionales */
+.project:hover {
+    transform: scale(1.05); /* Leve aumento de tamaño al hacer hover */
+}
+
+/* Footer */
+.footer {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    background-color: transparent; /* Sin fondo para ver la imagen del hero */
+    color: #cc4043; /* Color rojo para los iconos */
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2; /* Asegura que el footer esté encima de la imagen de fondo */
+}
+
+.social-icons {
+    margin: 0;
+}
+
+.social-btn {
+    font-size: 2rem; /* Tamaño grande para los íconos de redes sociales */
+    color: #cc4043; /* Color rojo para los íconos */
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-btn:hover {
+    color: #a52a2a; /* Rojo más oscuro al pasar el cursor */
+}
+
+
+/* Footer (aligned as buttons to the right over the hero image) */
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent; /* Sin fondo para ver la imagen del hero */
+    color: #cc4043; /* Color rojo para los iconos */
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2; /* Asegura que el footer esté encima de la imagen de fondo */
+}
+
+/* Carrusel */
+.image-carousel img {
+    width: 80%;  /* Establece el tamaño de las imágenes */
+    margin: 0 auto;  /* Centra las imágenes */
+}
+
+.carousel {
+    max-width: 800px;  /* Define un ancho máximo para el carrusel */
+    margin: 0 auto;  /* Centra el carrusel */
+}
+
+/* Sección de Publicaciones */
+.publicaciones {
+    margin: 40px 0;  /* Añade espacio superior e inferior */
+    padding: 20px;
+    background-color: #f9f9f9;  /* Fondo claro para la sección */
+    border-radius: 8px;  /* Bordes redondeados */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;  /* Título oscuro */
+}
+
+.publicaciones p {
+    font-size: 1.1rem;
+    color: #555;  /* Color gris para el texto */
+}
+
+.publicaciones ul {
+    padding-left: 0;
+}
+
+.publicaciones ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.publicaciones .publication-link {
+    text-decoration: none;
+    color: #007bff;  /* Color azul para los enlaces */
+    font-size: 1.1rem;
+}
+
+.publicaciones .publication-link:hover {
+    color: #0056b3;  /* Color azul oscuro al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
