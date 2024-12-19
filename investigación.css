@@ -2,29 +2,35 @@
 .navbar {
     transition: background-color 0.5s ease;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-top: 40px; /* Ajusta el margen superior del header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    padding: 10px 20px;
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro al hacer scroll */
 }
 
 .navbar-brand {
     font-weight: bold;
     font-size: 22px;
-    color:#cc4043
+    color: #cc4043;
+    margin-left: 2rem;
+    text-transform: none; /* Evita que el texto se convierta en mayúsculas */
 }
 
-
 .nav-link {
-    color: #cc4043; /* Color rojo para los textos de los enlaces */
-    font-size: 18px; /* Tamaño de fuente del navbar */
+    color: #cc4043;
+    font-size: 18px;
     padding: 10px;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #a52a2a; /* Rojo más oscuro al pasar el cursor */
+    color: #a52a2a;
 }
 
 /* General */
