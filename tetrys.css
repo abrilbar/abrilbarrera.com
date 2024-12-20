@@ -143,22 +143,20 @@ a {
     padding: 40px 20px;
     text-align: center;
 }
-.video-section {
-    margin: 3rem 0;
-    text-align: center;
-}
 
-.video-section h2 {
-    font-size: 2em;
-    margin-bottom: 1rem;
+
+/* Alineación y tamaño del video */
+.video-section {
+    text-align: center;
+    margin: 3rem 0;
 }
 
 .video-container {
-    position: relative;
     width: 100%;
-    max-width: 800px; /* Ajusta el tamaño máximo según lo que necesites */
-    margin: 0 auto; /* Centra el contenedor */
-    padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    max-width: 800px; /* Limita el tamaño máximo del video */
+    margin: 0 auto;  /* Centra el video */
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
     height: 0;
 }
 
@@ -170,6 +168,7 @@ a {
     height: 100%;
     border: none;
 }
+
 
 
 
