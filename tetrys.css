@@ -146,33 +146,29 @@ a {
 .video-section {
     margin: 3rem 0;
     text-align: center;
-       align: center;
-     justify-content: center;
 }
 
 .video-section h2 {
     font-size: 2em;
     margin-bottom: 1rem;
-    align: center;
-     justify-content: center;
 }
 
 .video-container {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 15px;
-    align: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo según lo que necesites */
+    margin: 0 auto; /* Centra el contenedor */
+    padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    height: 0;
 }
 
 .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 800px;  /* Limita el tamaño máximo del video */
-    height: 450px;  /* Ajusta la altura según el tamaño que prefieras */
-    margin: 0 auto;
-    justify-content: center;
-    align: center;
+    height: 100%;
+    border: none;
 }
 
 
