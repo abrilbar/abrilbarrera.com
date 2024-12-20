@@ -227,6 +227,11 @@ a {
     margin: 0 auto;  /* Centra el carrusel */
 }
 
+.video-containe { 
+     align-items: center;
+    text-align: center;
+}
+
 /* Sección de Publicaciones */
 .publicaciones {
     margin: 40px 0;  /* Añade espacio superior e inferior */
