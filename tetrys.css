@@ -145,19 +145,18 @@ a {
 }
 
 
-/* Alineación y tamaño del video */
 .video-section {
     text-align: center;
-    margin: 3rem 0;
+    margin-bottom: 50px; /* Espacio inferior */
 }
 
 .video-container {
-    width: 100%;
-    max-width: 800px; /* Limita el tamaño máximo del video */
-    margin: 0 auto;  /* Centra el video */
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-    height: 0;
+    width: 100%;
+    max-width: 800px; /* Límite de tamaño máximo */
+    margin: 0 auto; /* Centrado */
+    padding-bottom: 56.25%; /* Mantener la proporción 16:9 */
+    background-color: #000; /* Fondo negro por si no se carga el video */
 }
 
 .video-container iframe {
@@ -168,7 +167,6 @@ a {
     height: 100%;
     border: none;
 }
-
 
 
 
@@ -244,36 +242,16 @@ a {
     z-index: 2; /* Asegura que el footer esté encima de la imagen de fondo */
 }
 
-/* Carrusel */
-.image-carousel img {
-    width: 50%;  /* Establece el tamaño de las imágenes */
-    margin: 0 auto;  /* Centra las imágenes */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Hace que las imágenes cubran el área sin distorsionarse */
+    max-height: 500px; /* Limita la altura del carrusel */
 }
 
 .carousel {
-    max-width: 500px;  /* Define un ancho máximo para el carrusel */
-    margin: 0 auto;  /* Centra el carrusel */
-}
-.image-carousel {
-    max-width: 800%;
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
-}
-
-.carousel-inner {
-    max-width: 960px; /* Limita el tamaño del carrusel */
-    margin: 0 auto;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.carousel-control-prev, .carousel-control-next {
-    filter: invert(100%);
+    max-width: 100%; /* Limita el tamaño máximo */
+    margin: 0 auto; /* Centrado */
 }
 
 /* Sección de Publicaciones */
