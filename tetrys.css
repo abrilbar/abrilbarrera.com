@@ -244,16 +244,16 @@ a {
 
 /* Carrusel */
 .image-carousel img {
-    width: 80%;  /* Establece el tamaño de las imágenes */
+    width: 50%;  /* Establece el tamaño de las imágenes */
     margin: 0 auto;  /* Centra las imágenes */
 }
 
 .carousel {
-    max-width: 800px;  /* Define un ancho máximo para el carrusel */
+    max-width: 500px;  /* Define un ancho máximo para el carrusel */
     margin: 0 auto;  /* Centra el carrusel */
 }
 .image-carousel {
-    max-width: 100%;
+    max-width: 800%;
     display: flex;
     justify-content: center;
     margin: 3rem 0;
